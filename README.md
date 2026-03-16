@@ -1,6 +1,8 @@
 # 🧪 MLIAP Testsuite
 
 This repository contains a comprehensive testsuite designed to evaluate Machine Learning Interatomic Potentials (MLIAP) using Atomic Simulation Environment (ASE) calculators.
+The findings of these tests find use in my bachelors thesis `Evaluating Machine Learned Interatomic Potentials for Practical Simulations`,
+which you can find 
 
 ## 📁 Directory Structure
 
@@ -35,10 +37,11 @@ Tests are executed sequentially through the primary runner script in the root di
   python run_all_tests.py
 ```
 
-Please note that this step is optional—results are already provided.
-To override provided results for verification, the corresponding files in `/results` need to be erased or renamed.
+If you want the full project with our results,
+download https://richy.de/testsuite.rar (11GB) for the full repository.
 
 ### 2. Generating Plots 🎨
+
 
 After generating results, you can create specific figures by calling the individual visualization scripts. These scripts automatically read the corresponding `.pkl` files from the `/results` directory.
 
@@ -47,3 +50,16 @@ After generating results, you can create specific figures by calling the individ
 ```
 
 The corresponding `.png` files can be found in `/plotting/figures/`.
+
+
+## Citing
+If you found use for this project 
+```bibtex
+@inproceedings{
+    strunk2026evaluating,
+    title={Evaluating Machine Learned Inter-Atomic Potentials for a Practical Simulation Workflow},
+    author={Richard Strunk and Karnik Ram and Daniel Cremers},
+    booktitle={The Blogpost Track at ICLR 2026},
+    year={2026},
+    url={https://openreview.net/forum?id=qTOa90sISn}
+}
